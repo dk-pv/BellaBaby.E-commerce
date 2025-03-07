@@ -4,10 +4,12 @@ import Footer from '../footer/Footer'
 
 
 
-const Layout = ({children}) => {
+const Layout = ({children,cart=[]}) => {
+
+  
   return (
     <div>
-      <Navbar/>
+      <Navbar cartCount = {cart.length}/>
       <div  className='content'>
         {children}
       </div>

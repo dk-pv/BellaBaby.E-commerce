@@ -24,7 +24,7 @@ const Cart = ({ cart, removeFromCart, setCart }) => {
   };
 
   return (
-    <Layout>
+    <>
       <div className="w-[90%] mx-auto">
         <div className="container mx-auto mt-10">
           <div className="flex flex-col lg:flex-row shadow-md my-10">
@@ -189,7 +189,7 @@ const Cart = ({ cart, removeFromCart, setCart }) => {
           </div>
         </div>
       </div>
-    </Layout>
+    </>
   );
 };
 

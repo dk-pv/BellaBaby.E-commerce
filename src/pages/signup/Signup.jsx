@@ -219,7 +219,7 @@ const Signup = () => {
   };
 
   return (
-    <Layout>
+    <>
       <div className="relative">
         <img src={loginback} alt="signup background" className="object-cover w-full object-center h-[300px] mt-5" />
         <div className="w-full h-[300px] bg-black absolute top-0 opacity-50"></div>
@@ -265,7 +265,7 @@ const Signup = () => {
           </p>
         </div>
       </div>
-    </Layout>
+    </>
   );
 };
 

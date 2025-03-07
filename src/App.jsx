@@ -6,8 +6,9 @@ import AllProducts from "./components/AllProducts/AllProducts";
 import Login from "./pages/login/Login";
 import Signup from "./pages/signup/Signup";
 import "./App.css";
-import { AuthProvider} from "./components/AuthContext/AuthContext";
+import { AuthProvider } from "./components/AuthContext/AuthContext";
 import ProductDetails from "./components/AllProducts/ProductDetails";
+import Layout from "./components/layout/Layout";
 
 const App = () => {
   const [cart, setCart] = useState([]);
@@ -15,8 +16,7 @@ const App = () => {
   const AddToCart = (product) => {
     // add cart
     setCart([...cart, product]);
-    alert("Item Addedd in card")
-   
+    alert("Item Addedd in card");
   };
 
   //remove cart
@@ -24,28 +24,38 @@ const App = () => {
     const updatedCart = cart.filter((_, i) => i !== index);
     setCart(updatedCart);
   };
-  
 
   return (
     <>
       <div>
         <AuthProvider>
           <BrowserRouter>
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route
-                path="/cart"
-                element={<Cart cart={cart} setCart={setCart} removeFromCart={removeFromCart} />}
-              />
-              <Route
-                path="/allproducts"
-                element={<AllProducts AddToCart={AddToCart}  />}
-              />
-              <Route path="/login" element={<Login />} />
-              <Route path="/signup" element={<Signup />} />
+            <Layout cart={cart}>
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route
+                  path="/cart"
+                  element={
+                    <Cart
+                      cart={cart}
+                      setCart={setCart}
+                      removeFromCart={removeFromCart}
+                    />
+                  }
+                />
+                <Route
+                  path="/allproducts"
+                  element={<AllProducts AddToCart={AddToCart} />}
+                />
+                <Route path="/login" element={<Login />} />
+                <Route path="/signup" element={<Signup />} />
 
-              <Route path='/ProductDetails/:id' element={<ProductDetails/>}/>
-            </Routes>
+                <Route
+                  path="/ProductDetails/:id"
+                  element={<ProductDetails AddToCart={AddToCart}/>}
+                />
+              </Routes>
+            </Layout>
           </BrowserRouter>
         </AuthProvider>
       </div>

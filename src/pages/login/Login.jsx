@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useContext } from "react";
 import { useNavigate } from "react-router-dom";
-import Layout from "../../components/layout/Layout";
 import loginback from "../../assets/loginImg.webp";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../components/AuthContext/AuthContext";
@@ -40,7 +39,7 @@ const Login = () => {
   
 
   return (
-    <Layout>
+    <>
       <div className="relative">
         <img
           src={loginback}
@@ -117,7 +116,7 @@ const Login = () => {
           )}
         </div>
       </div>
-    </Layout>
+    </>
   );
 };
 
