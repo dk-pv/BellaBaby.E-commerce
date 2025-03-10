@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Layout from "../../components/layout/Layout";
 import { Link } from "react-router-dom";
 import { FaLongArrowAltLeft } from "react-icons/fa";
 
@@ -18,10 +17,33 @@ const Cart = ({ cart, removeFromCart, setCart }) => {
     0
   );
 
-  const handleOrderPlacement = () => {
-    alert("Your order is placed!");
-    setCart([]);
+  const handleOrderPlacement = async () => {
+    const order = {
+      items: cart,
+      quantities: quantities,
+      totalAmount: totalAmount,
+      paymentMethod: paymentMethod,
+      date: new Date().toLocaleString(),
+    };
+  
+    try {
+      const response = await fetch("http://localhost:5000/orders", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(order),
+      });
+  
+      if (response.ok) {
+        alert("Your order is placed!");
+        setCart([]);
+      } else {
+        alert("Failed to place order");
+      }
+    } catch (error) {
+      console.error("Error placing order:", error);
+    }
   };
+  
 
   return (
     <>
@@ -191,6 +213,12 @@ const Cart = ({ cart, removeFromCart, setCart }) => {
       </div>
     </>
   );
-};
-
+}
 export default Cart;
+
+
+
+
+
+
+

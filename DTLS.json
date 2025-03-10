@@ -1,34 +1,75 @@
 {
+  
   "users": [
     {
-      "id": "dc24",
-      "name": "Danish pv",
-      "email": "kukkudanish@gmail.com",
-      "password": "Kufjsjk@69"
-    
-    },
-    {
-      "id": "ae63",
+      "id": "01",
       "name": "Danish",
-      "email": "kuk@gamil.com",
-      "password": "dkKukku@458",
-      "confirmPassword": "dkKukku@458"
+      "email": "danishpv2468@gmail.com",
+      "role" : "admin",
+      "password": "Dani@2468",
+      "confirmPassword": "Dani@2468"
     },
     {
-      "id": "e7ce",
-      "name": "gsduygfgy",
-      "email": "dbaia@gmail.com",
-      "password": "ufuyy@D5265",
-      "confirmPassword": "ufuyy@D5265"
-    },
-    {
-      "id": "2992",
-      "name": "iam",
-      "email": "iam@gmail.com",
-      "password": "Ab@12345",
-      "confirmPassword": "Ab@12345"
+      "id": "7025",
+      "name": "kukku",
+      "email": "kukku@gmail.com",
+      "role" : "user",
+      "password": "Kukku@369",
+      "confirmPassword": "Kukku@369",
+      "cart": [],
+      "orders": []
     }
   ],
+  "orders": [
+    {
+      "id": "d319",
+      "items": [
+        {
+          "id": "2",
+          "name": "BabyGo Rotating Giraffe ",
+          "price": 549,
+          "category": "Toys",
+          "image": "https://m.media-amazon.com/images/I/71PDpjDcAwL._SY879_.jpg",
+          "description": "BabyGo Rotating Giraffe Musical Rattle for Kids | Cot Mobile for Cradle for Baby | Jhoomer for Kids Bed |"
+        }
+      ],
+      "quantities": [
+        1
+      ],
+      "totalAmount": 549,
+      "paymentMethod": "cod",
+      "date": "3/8/2025, 2:14:05 PM"
+    },
+    {
+      "id": "17c5",
+      "items": [
+        {
+          "id": "8",
+          "name": "Mercedes-Stroller",
+          "price": 1200000,
+          "category": "Accessories",
+          "image": "https://mercedes-baby.com/cdn/shop/files/2364-132-232_Mercedes_AMG_GT2_Limited_Edition_3-in-1.png?v=1739551694&width=493",
+          "description": "Mercedes_AMG_GT2 , Baby Stroller , With its adjustable GTX seat, zone for ventilation and silent canopy, the Hartan Kid's Stroller is perfectly innovated for kids of ages 0-6!"
+        }
+      ],
+      "quantities": [
+        1
+      ],
+      "totalAmount": 1200000,
+      "paymentMethod": "cod",
+      "date": "3/8/2025, 2:15:29 PM"
+    }
+  ],
+
+
+
+
+
+
+
+
+
+
   "products": [
     {
       "id": "1",

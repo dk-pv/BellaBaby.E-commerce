@@ -53,21 +53,7 @@ const HeroSection = () => {
             className="lg:text-2xl ml-[0px] lg:ml-[50px] font-semibold leading-10 text-white drop-shadow-lg animate-bounce">
             "Wrap your little one in comfort and care. <br /> Explore our handcrafted, safe, and delightful baby essentials."
           </p>
-        </div>
-
-        {/* Notes on the image */}
-        <div className="absolute top-[35%] left-[10%] p-3 bg-[#FFB6C1] bg-opacity-80 rounded-xl shadow-xl">
-          <p className="text-sm text-gray-800 font-medium">🍼 Hypoallergenic Baby Wipes — Gentle on skin, tough on mess.</p>
-        </div>
-        <div className="absolute top-[40%] left-[70%] p-3 bg-[#FFD700] bg-opacity-80 rounded-xl shadow-xl">
-          <p className="text-sm text-gray-800 font-medium">👶 Organic Baby Oils — Nourish and soothe delicate skin.</p>
-        </div>
-        <div className="absolute bottom-[20%] left-[30%] p-3 bg-[#98FB98] bg-opacity-80 rounded-xl shadow-xl">
-          <p className="text-sm text-gray-800 font-medium">🎀 Hand-Knitted Blankets — Soft, warm, and crafted with love.</p>
-        </div>
-        <div className="absolute bottom-[5%] right-[10%] p-3 bg-[#ADD8E6] bg-opacity-80 rounded-xl shadow-xl">
-          <p className="text-sm text-gray-800 font-medium">🚼 Bamboo Diapers — Eco-friendly, ultra-absorbent, and comfy.</p>
-        </div>
+        </div> 
       </div>
     </>
   );

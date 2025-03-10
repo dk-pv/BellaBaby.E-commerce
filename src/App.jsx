@@ -9,17 +9,17 @@ import "./App.css";
 import { AuthProvider } from "./components/AuthContext/AuthContext";
 import ProductDetails from "./components/AllProducts/ProductDetails";
 import Layout from "./components/layout/Layout";
-
+import OrderDetails from "./pages/orderDtls/OrderDtls";
+import ProtectedRoute from "./components/ProtectedRoute";
+import AdminMain from "./components/Admin/AdminMain";
 const App = () => {
   const [cart, setCart] = useState([]);
 
   const AddToCart = (product) => {
-    // add cart
     setCart([...cart, product]);
-    alert("Item Addedd in card");
+    alert(product.name + " " + "Add to cart");
   };
 
-  //remove cart
   const removeFromCart = (index) => {
     const updatedCart = cart.filter((_, i) => i !== index);
     setCart(updatedCart);
@@ -49,10 +49,21 @@ const App = () => {
                 />
                 <Route path="/login" element={<Login />} />
                 <Route path="/signup" element={<Signup />} />
-
                 <Route
                   path="/ProductDetails/:id"
-                  element={<ProductDetails AddToCart={AddToCart}/>}
+                  element={<ProductDetails AddToCart={AddToCart} />}
+                />
+                <Route path="/orders" element={<OrderDetails />} />
+
+                {/* Protected Route for Admin Dashboard */}
+                <Route
+                  path="/adminpage"
+                  element={
+                    <ProtectedRoute
+                      element={<AdminMain/>}
+                      allowedRoles={["admin"]}
+                    />
+                  }
                 />
               </Routes>
             </Layout>

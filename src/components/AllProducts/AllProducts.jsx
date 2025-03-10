@@ -1,7 +1,6 @@
 
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import Layout from "../layout/Layout";
 import { Link } from "react-router-dom";
 import { useAuth } from "../../components/AuthContext/AuthContext"
 

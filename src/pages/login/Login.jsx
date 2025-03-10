@@ -12,8 +12,13 @@ const Login = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    if (isLoggedIn) {
-      navigate("/");
+    const storedUser = JSON.parse(localStorage.getItem("user"));
+    if (isLoggedIn && storedUser) {
+      if (storedUser.role.toLowerCase() === "admin") {
+        navigate("/adminpage");
+      } else {
+        navigate("/");
+      }
     }
   }, [isLoggedIn, navigate]);
 
@@ -24,11 +29,17 @@ const Login = () => {
       const user = users.find(
         (u) => u.email === email && u.password === password
       );
-  
+
       if (user) {
-        login(); // ✅ Call login function
+        console.log("Logged in user:", user);
+        login(user); // Call login and store user
         setError("");
-        navigate("/");
+
+        if (user.role.toLowerCase() === "admin") {
+          navigate("/adminpage"); // Redirect admin
+        } else {
+          navigate("/"); // Redirect regular user
+        }
       } else {
         setError("Invalid email or password. Please try again.");
       }
@@ -36,7 +47,6 @@ const Login = () => {
       setError("Error connecting to server. Please try again later.");
     }
   };
-  
 
   return (
     <>
@@ -72,7 +82,9 @@ const Login = () => {
                 Welcome Back
               </h2>
 
-              {error && <div className="text-red-500 text-center mb-4">{error}</div>}
+              {error && (
+                <div className="text-red-500 text-center mb-4">{error}</div>
+              )}
 
               <div className="relative mb-6">
                 <label htmlFor="email" className="leading-7 text-sm text-white">
@@ -87,7 +99,10 @@ const Login = () => {
                 />
               </div>
               <div className="relative mb-6">
-                <label htmlFor="password" className="leading-7 text-sm text-white">
+                <label
+                  htmlFor="password"
+                  className="leading-7 text-sm text-white"
+                >
                   Password
                 </label>
                 <input
