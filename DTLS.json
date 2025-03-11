@@ -1,11 +1,10 @@
 {
-  
   "users": [
     {
       "id": "01",
       "name": "Danish",
       "email": "danishpv2468@gmail.com",
-      "role" : "admin",
+      "role": "admin",
       "password": "Dani@2468",
       "confirmPassword": "Dani@2468"
     },
@@ -13,11 +12,27 @@
       "id": "7025",
       "name": "kukku",
       "email": "kukku@gmail.com",
-      "role" : "user",
+      "role": "user",
       "password": "Kukku@369",
       "confirmPassword": "Kukku@369",
       "cart": [],
       "orders": []
+    },
+    {
+      "id": "d775",
+      "name": "Hrithik",
+      "email": "h@gmail.com",
+      "password": "H@123456",
+      "confirmPassword": "H@123456",
+      "role": "user"
+    },
+    {
+      "id": "79fe",
+      "name": "sulaiman",
+      "email": "sulu@gmail.com",
+      "password": "S@123456",
+      "confirmPassword": "S@123456",
+      "role": "user"
     }
   ],
   "orders": [
@@ -58,18 +73,83 @@
       "totalAmount": 1200000,
       "paymentMethod": "cod",
       "date": "3/8/2025, 2:15:29 PM"
+    },
+    {
+      "id": "4d28",
+      "items": [
+        {
+          "id": "2",
+          "name": "BabyGo Rotating Giraffe ",
+          "price": 549,
+          "category": "Toys",
+          "image": "https://m.media-amazon.com/images/I/71PDpjDcAwL._SY879_.jpg",
+          "description": "BabyGo Rotating Giraffe Musical Rattle for Kids | Cot Mobile for Cradle for Baby | Jhoomer for Kids Bed |"
+        }
+      ],
+      "quantities": [
+        1
+      ],
+      "totalAmount": 549,
+      "paymentMethod": "cod",
+      "date": "3/10/2025, 12:06:26 PM"
+    },
+    {
+      "id": "9a45",
+      "items": [
+        {
+          "id": "2",
+          "name": "BabyGo Rotating Giraffe ",
+          "price": 549,
+          "category": "Toys",
+          "image": "https://m.media-amazon.com/images/I/71PDpjDcAwL._SY879_.jpg",
+          "description": "BabyGo Rotating Giraffe Musical Rattle for Kids | Cot Mobile for Cradle for Baby | Jhoomer for Kids Bed |"
+        },
+        {
+          "id": "2",
+          "name": "BabyGo Rotating Giraffe ",
+          "price": 549,
+          "category": "Toys",
+          "image": "https://m.media-amazon.com/images/I/71PDpjDcAwL._SY879_.jpg",
+          "description": "BabyGo Rotating Giraffe Musical Rattle for Kids | Cot Mobile for Cradle for Baby | Jhoomer for Kids Bed |"
+        }
+      ],
+      "quantities": [
+        2,
+        1
+      ],
+      "totalAmount": 1647,
+      "paymentMethod": "cod",
+      "date": "3/10/2025, 12:08:27 PM"
+    },
+    {
+      "id": "02b8",
+      "items": [
+        {
+          "id": "1",
+          "name": "Jumping Bird",
+          "price": 299,
+          "category": "Toys",
+          "image": "https://m.media-amazon.com/images/I/41C7NEByv7L._SX300_SY300_QL70_FMwebp_.jpg",
+          "description": "Wembley 3 Pcs Jumping Bird Wind Up Toys Key Operated Colorful Bird Toys for Kids 6 Months to 3 Years Old Crawling Walking Moving for Toddlers - Multicolored."
+        },
+        {
+          "id": "2",
+          "name": "BabyGo Rotating Giraffe ",
+          "price": 549,
+          "category": "Toys",
+          "image": "https://m.media-amazon.com/images/I/71PDpjDcAwL._SY879_.jpg",
+          "description": "BabyGo Rotating Giraffe Musical Rattle for Kids | Cot Mobile for Cradle for Baby | Jhoomer for Kids Bed |"
+        }
+      ],
+      "quantities": [
+        1,
+        1
+      ],
+      "totalAmount": 848,
+      "paymentMethod": "cod",
+      "date": "3/10/2025, 4:31:51 PM"
     }
   ],
-
-
-
-
-
-
-
-
-
-
   "products": [
     {
       "id": "1",

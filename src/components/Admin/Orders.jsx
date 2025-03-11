@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Home = () => {
+const Orders = () => {
   return (
     <div>
-      <h1>Home</h1>
+      orders list
     </div>
   )
 }
 
-export default Home
+export default Orders

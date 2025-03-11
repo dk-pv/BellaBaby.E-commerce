@@ -12,6 +12,9 @@ import Layout from "./components/layout/Layout";
 import OrderDetails from "./pages/orderDtls/OrderDtls";
 import ProtectedRoute from "./components/ProtectedRoute";
 import AdminMain from "./components/Admin/AdminMain";
+import Customers from "./components/Admin/Customers";
+import Orders from "./components/Admin/Orders";
+import Products from "./components/Admin/Products";
 const App = () => {
   const [cart, setCart] = useState([]);
 
@@ -65,6 +68,9 @@ const App = () => {
                     />
                   }
                 />
+                <Route path="/adminpage/customers" element={<Customers/>}/>
+                <Route path="/adminpage/orders" element={<Orders/>}/>
+                <Route path="/adminpage/products" element={<Products/>}/>
               </Routes>
             </Layout>
           </BrowserRouter>
