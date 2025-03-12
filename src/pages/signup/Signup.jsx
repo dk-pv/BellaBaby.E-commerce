@@ -11,6 +11,7 @@ const Signup = () => {
     password: "",
     confirmPassword: "",
     role:"user",
+    createDate: new Date().toLocaleDateString('en-GB').replace(/\//g, '/')
   });
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");

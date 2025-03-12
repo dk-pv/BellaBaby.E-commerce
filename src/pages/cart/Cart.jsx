@@ -1,8 +1,11 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { FaLongArrowAltLeft } from "react-icons/fa";
+import { AuthContext } from "../../components/AuthContext/AuthContext";
 
 const Cart = ({ cart, removeFromCart, setCart }) => {
+
+  const {user} = useContext(AuthContext)
   const [quantities, setQuantities] = useState(cart.map(() => 1));
   const [paymentMethod, setPaymentMethod] = useState("card");
 
@@ -24,6 +27,7 @@ const Cart = ({ cart, removeFromCart, setCart }) => {
       totalAmount: totalAmount,
       paymentMethod: paymentMethod,
       date: new Date().toLocaleString(),
+      customer : user,
     };
   
     try {
