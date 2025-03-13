@@ -47,11 +47,12 @@ const Cart = ({ cart, removeFromCart, setCart }) => {
       console.error("Error placing order:", error);
     }
   };
-  
+
 
   return (
-    <>
-      <div className="w-[90%] mx-auto">
+    <div className="bg-gradient-to-r from-teal-300 to-cyan-200">
+      .
+      <div className="w-[90%] mx-auto  " >
         <div className="container mx-auto mt-10">
           <div className="flex flex-col lg:flex-row shadow-md my-10">
             <div className="w-full lg:w-3/4 bg-white px-10 py-10">
@@ -215,7 +216,7 @@ const Cart = ({ cart, removeFromCart, setCart }) => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 export default Cart;

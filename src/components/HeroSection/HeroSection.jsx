@@ -45,7 +45,7 @@ const HeroSection = () => {
   const navigate = useNavigate();
 
   return (
-    <section className="relative w-full h-screen bg-gradient-to-r from-teal-400 to-cyan-500 flex items-center justify-center p-6 md:p-12">
+    <section className="relative w-full h-screen bg-gradient-to-r from-teal-300 to-cyan-200 flex items-center justify-center p-6 md:p-12">
       <div className="text-center">
         <h1 
           className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white drop-shadow-xl animate-fade-in">

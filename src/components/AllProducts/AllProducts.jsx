@@ -108,7 +108,7 @@ const AllProducts = ({ AddToCart }) => {
 
   return (
     <>
-      <div className="container mx-auto p-6 bg-gradient-to-r from-teal-400 to-cyan-500 min-h-screen">
+      <div className="container mx-auto p-6 bg-gradient-to-r from-teal-300 to-cyan-200 min-h-screen">
         <h1 className="text-4xl font-extrabold text-center mb-8 text-yellow-300 drop-shadow-lg">
           Our Products
         </h1>

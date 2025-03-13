@@ -229,13 +229,42 @@
         "role": "user",
         "createDate": "13/03/2025"
       }
+    },
+    {
+      "id": "72f9",
+      "items": [
+        {
+          "id": "3",
+          "name": "Baby Tricycle",
+          "price": 5899,
+          "category": "Toys",
+          "image": "https://m.media-amazon.com/images/I/41tXI0zV2SL._SX300_SY300_QL70_FMwebp_.jpg",
+          "description": "Kidsmate Ninja Plug N Play Durable Kids/Baby Tricycle, Storage Basket, Cushion Seat and Seat Belt for 12 Months to 48 Months Boys/Girls/Carrying Capacity Upto 30 Kgs (Blue).",
+          "stock": "20"
+        }
+      ],
+      "quantities": [
+        3
+      ],
+      "totalAmount": 17697,
+      "paymentMethod": "cod",
+      "date": "3/13/2025, 5:28:02 PM",
+      "customer": {
+        "id": "0435",
+        "name": "lahan",
+        "email": "lahan@gmain.com",
+        "password": "L@123456789",
+        "confirmPassword": "L@123456789",
+        "role": "user",
+        "createDate": "13/03/2025"
+      }
     }
   ],
   "products": [
     {
       "id": "2",
       "name": "BabyGo Rotating Giraffe ",
-      "price": 549,
+      "price": "54899",
       "category": "Toys",
       "image": "https://m.media-amazon.com/images/I/71PDpjDcAwL._SY879_.jpg",
       "description": "BabyGo Rotating Giraffe Musical Rattle for Kids | Cot Mobile for Cradle for Baby | Jhoomer for Kids Bed |",
@@ -389,15 +418,6 @@
       "category": "Feeding",
       "image": "https://m.media-amazon.com/images/I/51mIMNm6pyL._SX300_SY300_QL70_FMwebp_.jpg",
       "description": "CERELAC Baby Cereal With Milk, Multigrain Dal Veg, From 12 To 24 Months, Stage 4, Source Of Iron & Protein ,Bag-In-Box Pack 300g Nestle Cerelac is a milk cereal based complementary food for babies from 12 to 24 months."
-    },
-    {
-      "id": "tdfgh",
-      "name": "ehwjk",
-      "price": "2500",
-      "category": "hwvc",
-      "image": "weh",
-      "description": "hev",
-      "stocks": "20"
     }
   ]
 }

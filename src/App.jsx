@@ -36,6 +36,7 @@ const App = () => {
           <BrowserRouter>
             <Layout cart={cart}>
               <Routes>
+                <Route errorElement= {<Error/>}/>
                 <Route path="/" element={<Home />} />
                 <Route
                   path="/cart"

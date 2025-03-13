@@ -12,7 +12,8 @@ const OrderDetails = () => {
   }, [userId]);
 
   return (
-    <div className="container mx-auto p-5">
+    <div className="from-teal-300 to-cyan-200 min-h-screen">
+       <div className="container mx-auto p-5 ">
       <h1 className="text-2xl font-bold mb-5">Your Orders</h1>
       {orders.length === 0 ? (
         <p>No orders found.</p>
@@ -36,6 +37,9 @@ const OrderDetails = () => {
         ))
       )}
     </div>
+
+    </div>
+   
   );
 };
 

@@ -139,7 +139,7 @@ const ProductDetails = ({ AddToCart }) => {
 
   return (
     <>
-      <div className="container mx-auto p-6 bg-gradient-to-r from-teal-400 to-cyan-500 min-h-screen">
+      <div className="container mx-auto p-6 bg-gradient-to-r from-teal-300 to-cyan-200 min-h-screen">
         <div className="max-w-4xl mx-auto bg-white p-6 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow duration-300 transform hover:scale-105">
           <img
             src={product.image}

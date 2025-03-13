@@ -115,6 +115,7 @@
 
 
 
+
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -141,7 +142,6 @@ const AddProduct = () => {
     const imageUrls = files.map((file) => URL.createObjectURL(file));
     setProduct((prev) => ({ ...prev, images: [...prev.images, ...imageUrls] }));
   };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
@@ -248,7 +248,6 @@ const AddProduct = () => {
     </div>
   );
 };
-
 export default AddProduct;
 
 
