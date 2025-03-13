@@ -1,9 +1,3 @@
-
-
-
-
-
-
 import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 
@@ -21,21 +15,7 @@ const EditProduct = () => {
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
-  useEffect(() => {
-    const fetchProduct = async () => {
-      try {
-        const response = await fetch(`http://localhost:5000/products/${id}`);
-        if (!response.ok) {
-          throw new Error("Failed to fetch product details");
-        }
-        const data = await response.json();
-        setProduct(data);
-      } catch (error) {
-        console.error("Error fetching product details:", error);
-      }
-    };
-    fetchProduct();
-  }, [id]);
+  
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -169,4 +149,5 @@ const EditProduct = () => {
 };
 
 export default EditProduct;
+
 
