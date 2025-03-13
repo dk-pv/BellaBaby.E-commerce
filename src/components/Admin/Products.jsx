@@ -51,7 +51,7 @@ const Products = () => {
     <div className="p-10 bg-gradient-to-br from-blue-100 via-indigo-50 to-indigo-300 rounded-3xl shadow-2xl">
       <div className="flex items-center justify-between mb-8">
         <button
-          onClick={() => navigate(-1)}
+          onClick={() => navigate(-2)}
           className="px-6 py-3 bg-blue-500 text-white rounded-xl shadow-lg hover:bg-blue-600 transition-transform transform hover:scale-110"
         >
           ← Back
@@ -59,7 +59,7 @@ const Products = () => {
         <h2 className="text-5xl font-extrabold text-blue-800">Product List</h2>
         <Link to={"/adminpage/addproducts"}>
           <button
-            onClick={() => navigate("/products/add")}
+            onClick={() => navigate("/adminpage/addproduct")}
             className="px-6 py-3 bg-green-500 text-white rounded-xl shadow-lg hover:bg-green-600 transition-transform transform hover:scale-110"
           >
             + Add Product
@@ -100,14 +100,14 @@ const Products = () => {
                     {product.stock || "N/A"}
                   </td>
                   <td className="border p-4 text-center">
-                    <Link to={"/adminpage/editproducts"}>
-                      <button
-                        onClick={() => navigate(`/products/edit/${product.id}`)}
-                        className="px-4 py-2 bg-yellow-500 text-white rounded-lg hover:bg-yellow-600 transition-transform transform hover:scale-105 mr-2"
-                      >
+
+                    <Link to={`/adminpage/editproducts/${product.id}`}>
+                      <button className="px-4 py-2 bg-yellow-500 text-white rounded-lg hover:bg-yellow-600 transition-transform transform hover:scale-105 mr-2">
                         Edit
                       </button>
                     </Link>
+
+                    
                     <button
                       onClick={() => deleteProduct(product.id)}
                       className="px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 transition-transform transform hover:scale-105"

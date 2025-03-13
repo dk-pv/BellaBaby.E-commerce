@@ -5,7 +5,6 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import AllProducts from "./components/AllProducts/AllProducts";
 import Login from "./pages/login/Login";
 import Signup from "./pages/signup/Signup";
-import "./App.css";
 import { AuthProvider } from "./components/AuthContext/AuthContext";
 import ProductDetails from "./components/AllProducts/ProductDetails";
 import Layout from "./components/layout/Layout";
@@ -74,7 +73,7 @@ const App = () => {
                 <Route path="/adminpage/orders" element={<Orders />} />
                 <Route path="/adminpage/products" element={<Products />} />
                 <Route path="/adminpage/addproducts" element={<AddProduct />} />
-                <Route path="/adminpage/editproducts/:product/id" element={<EditProduct/>} />
+                <Route path="/adminpage/editproducts/:id" element={<EditProduct/>} />
               </Routes>
             </Layout>
           </BrowserRouter>

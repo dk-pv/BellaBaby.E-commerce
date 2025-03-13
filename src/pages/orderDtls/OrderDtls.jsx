@@ -2,13 +2,14 @@ import React, { useEffect, useState } from "react";
 
 const OrderDetails = () => {
   const [orders, setOrders] = useState([]);
+  const userId = localStorage.getItem("userId"); // Get the logged-in user ID from local storage
 
   useEffect(() => {
-    fetch("http://localhost:5000/orders")
+    fetch(`http://localhost:5000/orders?userId=${userId}`)
       .then((response) => response.json())
       .then((data) => setOrders(data))
       .catch((error) => console.error("Error fetching orders:", error));
-  }, []);
+  }, [userId]);
 
   return (
     <div className="container mx-auto p-5">
@@ -39,5 +40,6 @@ const OrderDetails = () => {
 };
 
 export default OrderDetails;
+
 
 

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { useAuth } from "../../components/AuthContext/AuthContext";
 import {
   FaTachometerAlt,
   FaUsers,
@@ -21,7 +22,10 @@ const Sidebar = () => {
     { name: "Products", icon: <FaBox />, link: "/adminpage/products" },
   ];
 
+  const { logout } = useAuth();
+  
   const handleLogout = () => {
+    logout();
     localStorage.clear();
     sessionStorage.clear();
     navigate("/");

@@ -26,7 +26,11 @@ const Orders = () => {
   }, []);
 
   if (loading) {
-    return <p className="text-gray-600 text-center text-xl">Loading order details...</p>;
+    return (
+      <p className="text-gray-600 text-center text-xl">
+        Loading order details...
+      </p>
+    );
   }
 
   return (
@@ -38,7 +42,9 @@ const Orders = () => {
         >
           ← Back
         </button>
-        <h2 className="text-5xl font-extrabold text-orange-700">Order Details</h2>
+        <h2 className="text-5xl font-extrabold text-orange-700">
+          Order Details
+        </h2>
         <div></div>
       </div>
 
@@ -47,12 +53,15 @@ const Orders = () => {
           <table className="w-full table-auto border border-orange-300 rounded-xl">
             <thead className="bg-orange-500 text-white">
               <tr>
-                <th className="border p-4">ID</th>
-                <th className="border p-4">Product Price</th>
+                <th className="border p-4">Order ID</th>
+                <th className="border p-4">Total Price</th>
                 <th className="border p-4">Date</th>
                 <th className="border p-4">Payment Method</th>
-                <th className="border p-4">Quantity</th>
                 <th className="border p-4">Customer Name</th>
+                <th className="border p-4">Email</th>
+                <th className="border p-4">Delivery Status</th>
+                <th className="border p-4">Total Ordered Products</th>
+                <th className="border p-4">Ordered Products</th>
               </tr>
             </thead>
             <tbody>
@@ -63,12 +72,41 @@ const Orders = () => {
                     index % 2 === 0 ? "bg-orange-50" : "bg-white"
                   } hover:bg-orange-100 transition-transform transform hover:scale-[1.01]`}
                 >
-                  <td className="border p-4 text-center">{order.id || "N/A"}</td>
-                  <td className="border p-4 text-center font-semibold">₹{order.totalAmount || "N/A"}</td>
-                  <td className="border p-4 text-center">{order.date || "N/A"}</td>
-                  <td className="border p-4 text-center">{order.paymentMethod || "N/A"}</td>
-                  <td className="border p-4 text-center">{order.quantities || "N/A"}</td>
-                  <td className="border p-4 text-center font-medium">{order.customer.name || "N/A"}</td>
+                  <td className="border p-4 text-center">
+                    {order.id || "N/A"}
+                  </td>
+                  <td className="border p-4 text-center font-semibold">
+                    ₹{order.totalAmount || "0"}
+                  </td>
+                  <td className="border p-4 text-center">
+                    {order.date || "N/A"}
+                  </td>
+                  <td className="border p-4 text-center">
+                    {order.paymentMethod || "N/A"}
+                  </td>
+                  <td className="border p-4 text-center font-medium">
+                    {order.customer.name || "N/A"}
+                  </td>
+                  <td className="border p-4 text-center">
+                    {order.customer.email || "N/A"}
+                  </td>
+                  <td className="border p-4 text-center">
+                    <select className="p-2 bg-white border border-orange-400 rounded-lg">
+                      <option>Pending</option>
+                      <option>Packed</option>
+                      <option>Shipped</option>
+                      <option>Delivered</option>
+                      <option>Cancelled</option>
+                    </select>
+                  </td>
+                  <td className="border p-4 text-center">
+                    {order.quantities.length || "N/A"}
+                  </td>
+                  <td className="border p-4 text-center">
+                    {order.items?.length > 0
+                      ? order.items.map((item) => item.name).join(", ")
+                      : "N/A"}
+                  </td>
                 </tr>
               ))}
             </tbody>

@@ -25,6 +25,15 @@
       "confirmPassword": "Sanu@1234",
       "role": "user",
       "createDate": "12/03/2025"
+    },
+    {
+      "id": "0435",
+      "name": "lahan",
+      "email": "lahan@gmain.com",
+      "password": "L@123456789",
+      "confirmPassword": "L@123456789",
+      "role": "user",
+      "createDate": "13/03/2025"
     }
   ],
   "orders": [
@@ -127,6 +136,99 @@
         "role": "user",
         "createDate": "12/03/2025"
       }
+    },
+    {
+      "id": "b679",
+      "items": [
+        {
+          "id": "3",
+          "name": "Baby Tricycle",
+          "price": 5899,
+          "category": "Toys",
+          "image": "https://m.media-amazon.com/images/I/41tXI0zV2SL._SX300_SY300_QL70_FMwebp_.jpg",
+          "description": "Kidsmate Ninja Plug N Play Durable Kids/Baby Tricycle, Storage Basket, Cushion Seat and Seat Belt for 12 Months to 48 Months Boys/Girls/Carrying Capacity Upto 30 Kgs (Blue).",
+          "stock": "20"
+        }
+      ],
+      "quantities": [
+        1
+      ],
+      "totalAmount": 5899,
+      "paymentMethod": "card",
+      "date": "3/13/2025, 2:15:43 PM",
+      "customer": {
+        "id": "0435",
+        "name": "lahan",
+        "email": "lahan@gmain.com",
+        "password": "L@123456789",
+        "confirmPassword": "L@123456789",
+        "role": "user",
+        "createDate": "13/03/2025"
+      }
+    },
+    {
+      "id": "f919",
+      "items": [
+        {
+          "id": "7",
+          "name": "Baby Stroller",
+          "price": 6299,
+          "category": "Accessories",
+          "image": "https://m.media-amazon.com/images/I/41xwKIefiEL._SX300_SY300_QL70_FMwebp_.jpg",
+          "description": "LuvLap Galaxy Baby Stroller, Pram for Baby with 5 Point Safety Harness, Spacious Cushioned seat with Multi Level seat Recline, Easy Fold, Lightweight Baby Stroller for 0 to 3 Years."
+        },
+        {
+          "id": "8",
+          "name": "Mercedes-Stroller",
+          "price": 1200000,
+          "category": "Accessories",
+          "image": "https://mercedes-baby.com/cdn/shop/files/2364-132-232_Mercedes_AMG_GT2_Limited_Edition_3-in-1.png?v=1739551694&width=493",
+          "description": "Mercedes_AMG_GT2 , Baby Stroller , With its adjustable GTX seat, zone for ventilation and silent canopy, the Hartan Kid's Stroller is perfectly innovated for kids of ages 0-6!"
+        },
+        {
+          "id": "11",
+          "name": "Pampers Diapers (Pack of 54)",
+          "price": 610,
+          "category": "Diapers",
+          "image": "https://m.media-amazon.com/images/I/517V9WWcIAL._SX300_SY300_QL70_FMwebp_.jpg",
+          "description": "Pampers All Round Protection Pant Style Baby Diapers, Newborn/X-Small (NB/XS), 54 Count, 4-6kg, Anti Rash Blanket, Lotion with Aloe Vera Diaper"
+        },
+        {
+          "id": "16",
+          "name": "Feeding Set - Bowl - Spoon",
+          "price": 500,
+          "category": "Feeding",
+          "image": "https://m.media-amazon.com/images/I/71s98cPtTwL._SY450_PIbundle-2,TopRight,0,0_AA450SH20_.jpg",
+          "description": "Kids Station 2 Piece Microwave Friendly Silicone Baby Feeding Set - Bowl - Spoon - Make Mealtime Fun and Easy for Your Little One - Portable and Diaper Bag Friendly - Baby Feeding Product (Pink)"
+        },
+        {
+          "id": "19",
+          "name": "Sathu Maavu Mix (200 gm)",
+          "price": 259,
+          "category": "Feeding",
+          "image": "https://m.media-amazon.com/images/I/71mAVzbBjSL._SX425_.jpg",
+          "description": "TummyFriendly Foods Certified Organic Sprouted Sathu Maavu Mix | Made of Sprouted Ragi, Whole Grains, Pulses & Nuts | Organic Baby Food For 8+ Months Baby | Shelf-life 9 month | 200g, ONE PACK"
+        }
+      ],
+      "quantities": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "totalAmount": 1207668,
+      "paymentMethod": "cod",
+      "date": "3/13/2025, 2:35:16 PM",
+      "customer": {
+        "id": "0435",
+        "name": "lahan",
+        "email": "lahan@gmain.com",
+        "password": "L@123456789",
+        "confirmPassword": "L@123456789",
+        "role": "user",
+        "createDate": "13/03/2025"
+      }
     }
   ],
   "products": [
@@ -137,7 +239,8 @@
       "category": "Toys",
       "image": "https://m.media-amazon.com/images/I/71PDpjDcAwL._SY879_.jpg",
       "description": "BabyGo Rotating Giraffe Musical Rattle for Kids | Cot Mobile for Cradle for Baby | Jhoomer for Kids Bed |",
-      "stoks": 25
+      "stoks": 25,
+      "stock": "24"
     },
     {
       "id": "3",
@@ -145,7 +248,8 @@
       "price": 5899,
       "category": "Toys",
       "image": "https://m.media-amazon.com/images/I/41tXI0zV2SL._SX300_SY300_QL70_FMwebp_.jpg",
-      "description": "Kidsmate Ninja Plug N Play Durable Kids/Baby Tricycle, Storage Basket, Cushion Seat and Seat Belt for 12 Months to 48 Months Boys/Girls/Carrying Capacity Upto 30 Kgs (Blue)."
+      "description": "Kidsmate Ninja Plug N Play Durable Kids/Baby Tricycle, Storage Basket, Cushion Seat and Seat Belt for 12 Months to 48 Months Boys/Girls/Carrying Capacity Upto 30 Kgs (Blue).",
+      "stock": "20"
     },
     {
       "id": "4",
@@ -153,7 +257,8 @@
       "price": 299,
       "category": "Toys",
       "image": "https://m.media-amazon.com/images/I/51dVsmjfbgL._SX522_.jpg",
-      "description": "Little's Soft Plush Baby Ball with Rattle Sound | Baby Toys | Size 11 cm (Medium) | Toys for Kids | Colorful Toddler Activity Toys | Soft Toy"
+      "description": "Little's Soft Plush Baby Ball with Rattle Sound | Baby Toys | Size 11 cm (Medium) | Toys for Kids | Colorful Toddler Activity Toys | Soft Toy",
+      "stock": "25"
     },
     {
       "id": "5",
@@ -161,7 +266,8 @@
       "price": 599,
       "category": "Toys",
       "image": "https://m.media-amazon.com/images/I/51pc0+MXg1L._SY355_.jpg",
-      "description": "Storio Dancing Monkey Musical Toy for Kids Baby Spinning Rolling Doll Tumble Toy with Voice Control Musical Light and Sound Effects with Sensor, Multicolor."
+      "description": "Storio Dancing Monkey Musical Toy for Kids Baby Spinning Rolling Doll Tumble Toy with Voice Control Musical Light and Sound Effects with Sensor, Multicolor.",
+      "stock": "28"
     },
     {
       "id": "6",
@@ -169,7 +275,8 @@
       "price": 2299,
       "category": "Accessories",
       "image": "https://m.media-amazon.com/images/I/61yV85zwZeL._SY450_.jpg",
-      "description": "StarAndDaisy Bath Tub for Baby 0-3 Years/Foldable Bathtub for Kids with Space Saving, Newborn Baby Folding Bathing Tub Girls & Boys with Soap Tray, Easy to Store (BT-Blue)"
+      "description": "StarAndDaisy Bath Tub for Baby 0-3 Years/Foldable Bathtub for Kids with Space Saving, Newborn Baby Folding Bathing Tub Girls & Boys with Soap Tray, Easy to Store (BT-Blue)",
+      "stock": "20"
     },
     {
       "id": "7",
@@ -205,7 +312,7 @@
     },
     {
       "id": "11",
-      "name": "Pampers Diapers (Pack of 54)",
+      "name": "Pampers Diapers",
       "price": 610,
       "category": "Diapers",
       "image": "https://m.media-amazon.com/images/I/517V9WWcIAL._SX300_SY300_QL70_FMwebp_.jpg",
@@ -213,7 +320,7 @@
     },
     {
       "id": "12",
-      "name": "Baby Wet Wipes (Pack of 3)",
+      "name": "Baby Wet Wipes",
       "price": 435,
       "category": "Diapers",
       "image": "https://m.media-amazon.com/images/I/61JsgJw4X5L._SY450_PIbundle-216,TopRight,0,0_AA450SH20_.jpg",
@@ -221,7 +328,7 @@
     },
     {
       "id": "13",
-      "name": "MamyPoko Pants (Pack of 74)",
+      "name": "MamyPoko Pants",
       "price": 906,
       "category": "Diapers",
       "image": "https://m.media-amazon.com/images/I/71qHPrU0tTL._SX425_.jpg",
@@ -229,7 +336,7 @@
     },
     {
       "id": "14",
-      "name": "Pampers Premium Care Pants (Pack of 108)",
+      "name": "Pampers Premium Care Pants",
       "price": 1999,
       "category": "Diapers",
       "image": "https://m.media-amazon.com/images/I/71ePuafgbmL._SY450_.jpg",
@@ -237,7 +344,7 @@
     },
     {
       "id": "15",
-      "name": "LuvLap Pant (Pack of 38)",
+      "name": "LuvLap Pant",
       "price": 300,
       "category": "Diapers",
       "image": "https://m.media-amazon.com/images/I/51uk4A0n+oL._SY300_SX300_.jpg",
@@ -245,7 +352,7 @@
     },
     {
       "id": "16",
-      "name": "Feeding Set - Bowl - Spoon",
+      "name": "Feeding Set",
       "price": 500,
       "category": "Feeding",
       "image": "https://m.media-amazon.com/images/I/71s98cPtTwL._SY450_PIbundle-2,TopRight,0,0_AA450SH20_.jpg",
@@ -253,7 +360,7 @@
     },
     {
       "id": "17",
-      "name": "Baby Feeding Bottle",
+      "name": "Feeding Bottle",
       "price": 499,
       "category": "Feeding",
       "image": "https://m.media-amazon.com/images/I/51DIpCgxuUL._SY450_.jpg",
@@ -261,7 +368,7 @@
     },
     {
       "id": "18",
-      "name": "Ragi Powder(250 gm)",
+      "name": "Ragi Powder",
       "price": 199,
       "category": "Feeding",
       "image": "https://m.media-amazon.com/images/I/41QZN0+39QL._SY300_SX300_.jpg",
@@ -269,7 +376,7 @@
     },
     {
       "id": "19",
-      "name": "Sathu Maavu Mix (200 gm)",
+      "name": "Sathu Maavu Mix",
       "price": 259,
       "category": "Feeding",
       "image": "https://m.media-amazon.com/images/I/71mAVzbBjSL._SX425_.jpg",
@@ -277,229 +384,20 @@
     },
     {
       "id": "20",
-      "name": "CERELAC Baby Cereal(3000 gm)",
+      "name": "CERELAC Baby Cereal",
       "price": 350,
       "category": "Feeding",
       "image": "https://m.media-amazon.com/images/I/51mIMNm6pyL._SX300_SY300_QL70_FMwebp_.jpg",
       "description": "CERELAC Baby Cereal With Milk, Multigrain Dal Veg, From 12 To 24 Months, Stage 4, Source Of Iron & Protein ,Bag-In-Box Pack 300g Nestle Cerelac is a milk cereal based complementary food for babies from 12 to 24 months."
     },
     {
-      "id": "21",
-      "name": "toyyyy",
-      "price": "500000",
-      "category": "toys",
-      "images": [],
-      "description": "mahvjefbgyeiwufweiavfryu",
-      "stocks": "17"
-    },
-    {
-      "id": "21",
-      "name": "danisfjbeo",
-      "price": "8522",
-      "category": "toys",
-      "image": "etgetrgfe",
-      "description": "jhwy",
-      "stocks": "25"
-    },
-    {
-      "id": "22",
-      "name": "dsjsvhkfv",
-      "price": "5000000",
-      "category": "jywfwyhy6twuhwuwgfw",
-      "image": "wufwutvwje",
-      "description": "wmhbfiuqboyqb",
-      "stocks": "55"
-    },
-    {
-      "id": "25",
-      "name": "facd",
-      "price": "242",
-      "category": "toys",
-      "image": "ejeq",
-      "description": "jdbvj",
-      "stocks": "85"
-    },
-    {
-      "id": "w",
-      "name": "80",
-      "price": "25",
-      "category": "toys",
-      "image": "etgetrgfe",
-      "description": "",
-      "stocks": "25"
-    },
-    {
-      "id": "sj",
-      "name": "ss",
-      "price": "25",
-      "category": "toys",
-      "image": "sf",
-      "description": "",
-      "stocks": "25"
-    }
-  ],
-  "Accessories & Toys": [
-    {
-      "id": "1",
-      "name": "Jumping Bird",
-      "price": 299,
-      "category": "Toys",
-      "image": "https://m.media-amazon.com/images/I/41C7NEByv7L._SX300_SY300_QL70_FMwebp_.jpg",
-      "description": "Wembley 3 Pcs Jumping Bird Wind Up Toys Key Operated Colorful Bird Toys for Kids 6 Months to 3 Years Old Crawling Walking Moving for Toddlers - Multicolored."
-    },
-    {
-      "id": "2",
-      "name": "BabyGo Rotating Giraffe ",
-      "price": 549,
-      "category": "Toys",
-      "image": "https://m.media-amazon.com/images/I/71PDpjDcAwL._SY879_.jpg",
-      "description": "BabyGo Rotating Giraffe Musical Rattle for Kids"
-    },
-    {
-      "id": "3",
-      "name": "Baby Tricycle",
-      "price": 5899,
-      "category": "Toys",
-      "image": "https://m.media-amazon.com/images/I/41tXI0zV2SL._SX300_SY300_QL70_FMwebp_.jpg",
-      "description": "Kidsmate Ninja Plug N Play Durable Kids/Baby Tricycle, Storage Basket, Cushion Seat and Seat Belt for 12 Months to 48 Months Boys/Girls/Carrying Capacity Upto 30 Kgs (Blue)."
-    },
-    {
-      "id": "4",
-      "name": " Little's Soft Plush Baby Ball with Rattle Sound",
-      "price": 299,
-      "category": "Toys",
-      "image": "https://m.media-amazon.com/images/I/51dVsmjfbgL._SX522_.jpg",
-      "description": "Little's Soft Plush Baby Ball with Rattle Sound | Baby Toys | Size 11 cm (Medium) | Toys for Kids | Colorful Toddler Activity Toys | Soft Toy"
-    },
-    {
-      "id": "5",
-      "name": "Dancing Monkey Musical Toy ",
-      "price": 599,
-      "category": "Toys",
-      "image": "https://m.media-amazon.com/images/I/51pc0+MXg1L._SY355_.jpg",
-      "description": "Storio Dancing Monkey Musical Toy for Kids Baby Spinning Rolling Doll Tumble Toy with Voice Control Musical Light and Sound Effects with Sensor, Multicolor."
-    },
-    {
-      "id": "6",
-      "name": "Foldable Bathtub",
-      "price": 2299,
-      "category": "Accessories",
-      "image": "https://m.media-amazon.com/images/I/61yV85zwZeL._SY450_.jpg",
-      "description": "StarAndDaisy Bath Tub for Baby 0-3 Years/Foldable Bathtub for Kids with Space Saving, Newborn Baby Folding Bathing Tub Girls & Boys with Soap Tray, Easy to Store (BT-Blue)"
-    },
-    {
-      "id": "7",
-      "name": "Baby Stroller",
-      "price": 6299,
-      "category": "Accessories",
-      "image": "https://m.media-amazon.com/images/I/41xwKIefiEL._SX300_SY300_QL70_FMwebp_.jpg",
-      "description": "LuvLap Galaxy Baby Stroller, Pram for Baby with 5 Point Safety Harness, Spacious Cushioned seat with Multi Level seat Recline, Easy Fold, Lightweight Baby Stroller for 0 to 3 Years."
-    },
-    {
-      "id": "8",
-      "name": "Mercedes-Stroller",
-      "price": 1200000,
-      "category": "Accessories",
-      "image": "https://mercedes-baby.com/cdn/shop/files/2364-132-232_Mercedes_AMG_GT2_Limited_Edition_3-in-1.png?v=1739551694&width=493",
-      "description": "Mercedes_AMG_GT2 , Baby Stroller , With its adjustable GTX seat, zone for ventilation and silent canopy, the Hartan Kid's Stroller is perfectly innovated for kids of ages 0-6!"
-    },
-    {
-      "id": "9",
-      "name": " Cotton Swing Jhula",
-      "price": 1999,
-      "category": "Accessories",
-      "image": "https://m.media-amazon.com/images/I/71w4kRWD35L._SX425_.jpg",
-      "description": "SHYONA Cotton Swing Jhula For Kids Baby'S Children Folding And Washable 0-8 Years Garden Jhula For Babies For Indoor Outdoor (Black Cream), 38 centimeters."
-    },
-    {
-      "id": "10",
-      "name": "Baby Carrier Bag",
-      "price": 3299,
-      "category": "Accessories",
-      "image": "https://m.media-amazon.com/images/I/41-Rc4th7mL._SX300_SY300_QL70_FMwebp_.jpg",
-      "description": "Antil's Baby Carrier Bag/Adjustable Hands Free 4 in 1 Baby/Baby sefty Belt/Child Safety Strip/Baby Sling Carrier Bag/Baby Back Carrier Bag."
-    }
-  ],
-  "Feeding & Diapers": [
-    {
-      "id": "11",
-      "name": "Pampers Diapers (Pack of 54)",
-      "price": 610,
-      "category": "Diapers",
-      "image": "https://m.media-amazon.com/images/I/517V9WWcIAL._SX300_SY300_QL70_FMwebp_.jpg",
-      "description": "Pampers All Round Protection Pant Style Baby Diapers, Newborn/X-Small (NB/XS), 54 Count, 4-6kg, Anti Rash Blanket, Lotion with Aloe Vera Diaper"
-    },
-    {
-      "id": "12",
-      "name": "Baby Wet Wipes (Pack of 3)",
-      "price": 435,
-      "category": "Diapers",
-      "image": "https://m.media-amazon.com/images/I/61JsgJw4X5L._SY450_PIbundle-216,TopRight,0,0_AA450SH20_.jpg",
-      "description": "Johnson's Baby Wet Wipes | 216 Wipes | Alcohol & Soap Free | Prevents Rashes & Redness | with 3X Moisturising Lotion | As Mild as Pure Water | Enriched with Glycerin"
-    },
-    {
-      "id": "13",
-      "name": "MamyPoko Pants (Pack of 74)",
-      "price": 906,
-      "category": "Diapers",
-      "image": "https://m.media-amazon.com/images/I/71qHPrU0tTL._SX425_.jpg",
-      "description": "MamyPoko Pants Extra Absorb Baby Diapers, Medium (M), 74 Count, 7-12kg"
-    },
-    {
-      "id": "14",
-      "name": "Pampers Premium Care Pants (Pack of 108)",
-      "price": 1999,
-      "category": "Diapers",
-      "image": "https://m.media-amazon.com/images/I/71ePuafgbmL._SY450_.jpg",
-      "description": "Pampers Premium Care Pants, Medium size baby Diapers, (7-12kg) 108 Count Softest ever Pampers Pants, Medium Size, Pack of 108"
-    },
-    {
-      "id": "15",
-      "name": "LuvLap Pant (Pack of 38)",
-      "price": 300,
-      "category": "Diapers",
-      "image": "https://m.media-amazon.com/images/I/51uk4A0n+oL._SY300_SX300_.jpg",
-      "description": "LuvLap Pant Style Baby Diapers, Small (S), 38 Count, For babies of Upto 4-8Kg with Aloe Vera Lotion for rash protection, with upto 12hr protection, Diapers"
-    },
-    {
-      "id": "16",
-      "name": "Feeding Set - Bowl - Spoon",
-      "price": 500,
-      "category": "Feeding",
-      "image": "https://m.media-amazon.com/images/I/71s98cPtTwL._SY450_PIbundle-2,TopRight,0,0_AA450SH20_.jpg",
-      "description": "Kids Station 2 Piece Microwave Friendly Silicone Baby Feeding Set - Bowl - Spoon - Make Mealtime Fun and Easy for Your Little One - Portable and Diaper Bag Friendly - Baby Feeding Product (Pink)"
-    },
-    {
-      "id": "17",
-      "name": "Baby Feeding Bottle",
-      "price": 499,
-      "category": "Feeding",
-      "image": "https://m.media-amazon.com/images/I/51DIpCgxuUL._SY450_.jpg",
-      "description": "Philips Avent Natural Baby Feeding Bottle | No.1 Brand Recommended by Moms Worldwide | Ideal for 0 months+| Natural Response Technology Mimics Breastfeeding | Uniquely Designed Nipple releases milk only when baby drinks | Pack of 1 | SCY900/01."
-    },
-    {
-      "id": "18",
-      "name": "Ragi Powder(250 gm)",
-      "price": 199,
-      "category": "Feeding",
-      "image": "https://m.media-amazon.com/images/I/41QZN0+39QL._SY300_SX300_.jpg",
-      "description": " 250 gramSLURRP FARM No Added Sugar, No Salt, Sprouted Ragi Powder|100% Natural Ragi Flour/Nachni Flour/Ragisatva/Kodra/Taidalu/Kezhvaragu/Finger Millet Flour| No Milk |250 Gram"
-    },
-    {
-      "id": "19",
-      "name": "Sathu Maavu Mix (200 gm)",
-      "price": 259,
-      "category": "Feeding",
-      "image": "https://m.media-amazon.com/images/I/71mAVzbBjSL._SX425_.jpg",
-      "description": "TummyFriendly Foods Certified Organic Sprouted Sathu Maavu Mix | Made of Sprouted Ragi, Whole Grains, Pulses & Nuts | Organic Baby Food For 8+ Months Baby | Shelf-life 9 month | 200g, ONE PACK"
-    },
-    {
-      "id": "20",
-      "name": "CERELAC Baby Cereal(3000 gm)",
-      "price": 350,
-      "category": "Feeding",
-      "image": "https://m.media-amazon.com/images/I/51mIMNm6pyL._SX300_SY300_QL70_FMwebp_.jpg",
-      "description": "CERELAC Baby Cereal With Milk, Multigrain Dal Veg, From 12 To 24 Months, Stage 4, Source Of Iron & Protein ,Bag-In-Box Pack 300g Nestle Cerelac is a milk cereal based complementary food for babies from 12 to 24 months."
+      "id": "tdfgh",
+      "name": "ehwjk",
+      "price": "2500",
+      "category": "hwvc",
+      "image": "weh",
+      "description": "hev",
+      "stocks": "20"
     }
   ]
 }
